@@ -26,7 +26,7 @@ else
     printf "\n\下载 Easy Diffusion..\n\n"
     printf "使用 $update_branch 通道\n\n"
 
-    if git clone -b "$update_branch" https://github.com/cmdr2/stable-diffusion-ui.git sd-ui-files ; then
+    if git clone -b "$update_branch" https://ghproxy.com/https://github.com/ez-docker/stable-diffusion-ui.git sd-ui-files ; then
         echo sd_ui_git_cloned >> scripts/install_status.txt
     else
         fail "git clone 失败"
